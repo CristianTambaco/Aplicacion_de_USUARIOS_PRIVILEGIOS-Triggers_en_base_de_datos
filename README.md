@@ -1,6 +1,6 @@
 PARTE 1
  
- CREACIÓN DE ROLESYASIGNACIÓNDEPRIVILEGIOS
+ CREACIÓN DE ROLES Y ASIGNACIÓN DE PRIVILEGIOS
  
  Creación del Script SQL
  
@@ -45,15 +45,15 @@ PARTE 1
  
  2. Tipos de triggers:
 
-○ BEFORE:Seejecuta antes de que se realice una acción en la base de datos
+○ BEFORE:Se ejecuta antes de que se realice una acción en la base de datos
  (INSERT, UPDATE, DELETE). Son útiles para validar datos antes de que se
  efectúe el cambio en la tabla.
  
- ○ AFTER:Seejecuta después de que la acción se haya realizado (INSERT,
+ ○ AFTER:Se ejecuta después de que la acción se haya realizado (INSERT,
  UPDATE, DELETE). Es útil cuando quieres registrar cambios o ejecutar
  acciones adicionales después de que se haya completado una operación.
  
- ○ INSTEADOF:Seutiliza principalmente en vistas, reemplazando la acción
+ ○ INSTEADOF:Se utiliza principalmente en vistas, reemplazando la acción
  que se habría realizado por otra. Por ejemplo, en una vista, puedes usar un
  trigger INSTEAD OF para manejar INSERT, UPDATE o DELETE en lugar de
  modificar directamente las vistas.
@@ -62,17 +62,17 @@ PARTE 1
  
  ○ INSERT:Cuando se agrega un nuevo registro a la tabla.
  
- ○ UPDATE:Cuandose modifica un registro existente en la tabla.
+ ○ UPDATE:Cuando se modifica un registro existente en la tabla.
  
  ○ DELETE:Cuando se elimina un registro de la tabla.
  
  4. Contexto de los triggers:
  
- ○ NEW:Entriggers de tipo INSERT o UPDATE, puedes utilizar la palabra clave
+ ○ NEW:En triggers de tipo INSERT o UPDATE, puedes utilizar la palabra clave
  NEW para hacer referencia a los valores que van a insertarse o actualizarse
  en una fila. Es decir, los nuevos valores de una columna.
  
- ○ OLD:Entriggers de tipo DELETE o UPDATE, puedes utilizar la palabra clave
+ ○ OLD:En triggers de tipo DELETE o UPDATE, puedes utilizar la palabra clave
  OLD para hacer referencia a los valores anteriores de una fila antes de la
  modificación o eliminación.
  
@@ -93,12 +93,12 @@ automatización de tareas, la integridad referencial, el control de cambios,
  
  5. Aplicaciones de Triggers:
  
- ○ Áreasdeaplicación: Identificar en qué áreas de una base de datos se aplican
+ ○ Áreas de aplicación: Identificar en qué áreas de una base de datos se aplican
  triggers. Ejemplos comunes incluyen la validación de datos, la auditoría, el
  seguimiento de cambios y la implementación de reglas de negocio
  automáticas.
  
- ○ Casosdeusoespecíficos: Investigar ejemplos reales de empresas o
+ ○ Casos de uso específicos: Investigar ejemplos reales de empresas o
  sistemas que utilicen triggers para gestionar procesos como auditorías de
  registros, actualizaciones automáticas de información, control de integridad
  referencial, entre otros.
@@ -118,15 +118,15 @@ automatización de tareas, la integridad referencial, el control de cambios,
 en la tabla de Empleados. Cada vez que se realice una operación sobre la tabla de
  empleados, el sistema debe registrar la siguiente información en la tabla de auditoría:
  
- ● Tipodeoperación realizada (INSERT, UPDATE, DELETE)
+ ● Tipo de operación realizada (INSERT, UPDATE, DELETE)
  
- ● IDdelempleado afectado
+ ● ID del empleado afectado
  
- ● Nombreydepartamento del empleado
+ ● Nombre y departamento del empleado
  
  ● Salario del empleado
  
- ● Fechayhora en que se realizó la operación
+ ● Fecha y hora en que se realizó la operación
  
  Pasos para la práctica:
  
